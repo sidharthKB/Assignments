@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   <context:annotation-config></context:annotation-config>
+   <context:component-scan base-package="maven_demo"></context:component-scan>
+  
+   <bean id="abc" class="maven_demo.q5">
+<property name="size" value="22"></property>
+</bean>
+<bean id="def" class="maven_demo.xyz">
+<property name="Name" value="MRF"></property>
+<property name="roll" value="12"></property>
+</bean>
+<bean id="co"  class="maven_demo.compatetor">
+<property name="Names" value="CEAT"></property>
+</bean>
+   <bean id="be" class="maven_demo.q8" init-method="init" destroy-method="dest"></bean>
+</beans>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var year = parseInt(prompt("Enter Year"));
+    var n=0;
+for(var i = 0; n <= 20 ; i++)
+{
+  if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
+  {
+      document.write(year + ' is a leap year <br>');
+      n++;
+  }
+  year += 1;
+}
+  </script>
+  </body>
+</html>

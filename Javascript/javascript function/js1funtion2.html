@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+   function square(x)
+   {
+     return x*x;
+   }
+   function double(x)
+   {
+     return x*2;
+   }
+
+    function composedValue(double,square,x)
+     {
+      return square(double(x));
+      return double(square(x));
+  }
+  x=prompt("enter your x value");
+  document.write(composedValue(double,square,x)+"\n");
+  document.write(composedValue(square,double,x));
+    </script>
+  </body>
+</html>

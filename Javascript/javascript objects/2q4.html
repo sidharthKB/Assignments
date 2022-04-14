@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var savings = {
+    accountnumber:23881948,
+    accountholdername:"Dimitri",
+    accountbalance:2400,
+    isSalary:70000
+    };
+    var current = {
+        accountnumber:23881948,
+        accountholdername:"Dimitri",
+        accountbalance:2100,
+        odLimit:300
+    };
+    function withdraw(savings,amount){
+      return savings.accountbalance - amount;
+    }
+    function withdraw(current,amount){
+        return current.accountbalance - amount;
+    }
+    console.log(withdraw(savings,200));
+    document.write("Savings account balance : "+withdraw(savings,200)+"<br>");
+    console.log(withdraw(current,2000));
+    document.write("Current account balance : " + withdraw(current,1294));
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function person(fname,lname,age,skills,dateofbirth,address,married,profession)
+   {
+   this.fname=fname;
+   this.lname=lname;
+   this.age=age;
+   this.skills=skills;
+   this.dateofbirth=dateofbirth;
+   this.address=address;
+   this.married=married;
+   this.profession=profession;
+
+   }
+  var person1=new
+  person("avi","ck",22,"c","18/09/2000",{city:"karur",pincode:"639117"},"false","sr analyst")
+  var person2=new person("achu","c",21,"HTML","08/06/2001",{city:"karur",pincode:"639117"},"false","jr analyst")
+
+  var print=function()
+  {
+   document.write(JSON.stringify(person1));
+   document.write(JSON.stringify(person2));
+  }();
+    </script>
+  </body>
+</html>

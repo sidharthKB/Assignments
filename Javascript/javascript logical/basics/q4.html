@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function coinFlip() {
+    return(Math.random() < 0.3) ? 'Heads' : 'Tails';
+}
+
+var howManyTimes=500;
+var countHeads=0;
+for (var i=0; i<howManyTimes;i++){
+if (coinFlip()==='Heads'){
+ countHeads++;
+}
+}
+document.write("Heads appear "+(countHeads/howManyTimes)*100+"% of the time");
+    </script>
+</body>
+</html>
